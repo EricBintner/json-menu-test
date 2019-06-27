@@ -221,8 +221,6 @@ nav #copy {
 /* Desktop
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media all and (min-width: 768px) {
-  body.nav-open {
-    overflow: hidden; }
   .wrapper {
     margin: 0 auto; }
   header {
