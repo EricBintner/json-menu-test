@@ -165,10 +165,17 @@
         parent.removeChild(navChecks);
     }
 
-  //LOAD JSONp as script first, append to head, run callback function to parse JSON
-    const script = document.createElement('script')
-    script.src = './api/navigation/?callback=makeMenuItems'
-    document.head.appendChild(script)
+      // -- in express.js or cross-domain
+      //Load JSONp as script first, append to head, run callback function to parse JSON
+        // const script = document.createElement('script')
+        // script.src = './api/navigation/?callback=makeMenuItems'
+        // document.head.appendChild(script)
+
+      // -- local  /public
+      //Load json
+        fetch('./api/navigation.json')
+          .then(response => response.json())
+          .then(data => makeMenuItems(data))
 
     var d = new Date();
     document.getElementById("thisYear").innerHTML = d.getFullYear();
