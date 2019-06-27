@@ -12,9 +12,6 @@ $ npm install && npm start
 
 
 ### NOTES
-```bash
-$ npm install && npm start
-```
 * In addition to the above two commands you node version may need to be downgraded to v6.5.0
 * I tried to upgrade everything but the dependency node-sass-middleware seems incompatible with node v10
 * if the above does not work try the following first and start again
