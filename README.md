@@ -5,7 +5,7 @@
 ### Install locally
 
 ```
-$ git clone (tbd)
+$ git clone git@github.com:EricBintner/json-menu-test.git
 $ npm install && npm start
 ```
 * http://localhost:3000
