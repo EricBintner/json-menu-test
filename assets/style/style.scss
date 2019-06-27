@@ -1,5 +1,5 @@
 /*–––––––––––––––––––––––––––––––––––––––––––––––– */
-// Styles by Eric Bintner. May 4-6th 2019
+// Styles by Eric Bintner. May 4-6th + June 26th 2019
 /*–––––––––––––––––––––––––––––––––––––––––––––––– */
 
 
@@ -7,27 +7,9 @@
 
 /* Meta Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@font-face {
-  font-family: "FoundersGrotesk";
-  font-weight: 300;
-  src: url("/fonts/FoundersGrotesk-Light.woff2") format("woff2"),
-       url("/fonts/FoundersGrotesk-Light.woff") format("woff");
-}
-@font-face {
-  font-family: "FoundersGrotesk";
-  font-weight: 400;
-  src: url("/fonts/FoundersGrotesk-Regular.woff2") format("woff2"),
-       url("/fonts/FoundersGrotesk-Regular.woff") format("woff");
-}
-@font-face {
-  font-family: "FoundersGrotesk";
-  font-weight: 500;
-  src: url("/fonts/FoundersGrotesk-Medium.woff2") format("woff2"),
-       url("/fonts/FoundersGrotesk-Medium.woff") format("woff");
-}
 
 // for all fonts, use $elefont and font-weight 300, 400, or 500
-$eleFont: "FoundersGrotesk", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$eleFont: "Rubik", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $Helvetica: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // color vars
@@ -91,13 +73,6 @@ body {
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-//* **Logo** 13 Founders Grotesk Regular
-//* **Primary Navigation** 18/24/2 Founders Grotesk Light
-//* **Secondary Navigation** 13/18/1 Founders Grotesk Light
-//* **Headline** 112/124/2 Founders Grotesk Regular
-//* **Body Copy** 18/28/1 Founders Grotesk Light
-
 
 .nav_primary a{
   font-size:1.8rem;
@@ -357,6 +332,11 @@ nav #copy {
 @media all and (min-width: 768px) {
 // and (-webkit-min-device-pixel-ratio: 2),
 //  all and (min-width: 768px) and (min-resolution: 192dpi) {
+
+  body.nav-open {
+    overflow: hidden;
+  }
+
   .wrapper {
     margin: 0 auto;
   }

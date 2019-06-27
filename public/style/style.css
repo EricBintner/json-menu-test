@@ -3,21 +3,6 @@
 /*–––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Meta Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@font-face {
-  font-family: "FoundersGrotesk";
-  font-weight: 300;
-  src: url("/fonts/FoundersGrotesk-Light.woff2") format("woff2"), url("/fonts/FoundersGrotesk-Light.woff") format("woff"); }
-
-@font-face {
-  font-family: "FoundersGrotesk";
-  font-weight: 400;
-  src: url("/fonts/FoundersGrotesk-Regular.woff2") format("woff2"), url("/fonts/FoundersGrotesk-Regular.woff") format("woff"); }
-
-@font-face {
-  font-family: "FoundersGrotesk";
-  font-weight: 500;
-  src: url("/fonts/FoundersGrotesk-Medium.woff2") format("woff2"), url("/fonts/FoundersGrotesk-Medium.woff") format("woff"); }
-
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
@@ -37,7 +22,7 @@ body {
   font-size: 1.6em;
   line-height: 1.8em;
   font-weight: 400;
-  font-family: "FoundersGrotesk", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Rubik", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000; }
 
 .container {
@@ -52,7 +37,7 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .nav_primary a {
   font-size: 1.8rem;
-  font-family: "FoundersGrotesk", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Rubik", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300; }
 
 .nav_secondary a {
@@ -61,12 +46,12 @@ body {
 
 p {
   font-size: 1.8rem;
-  font-family: "FoundersGrotesk", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Rubik", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300; }
 
 p.headline {
   font-size: 11.2rem;
-  font-family: "FoundersGrotesk", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Rubik", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   margin: 5rem 2.4rem 2.8rem 2.4rem;
   line-height: 5rem;
@@ -236,6 +221,8 @@ nav #copy {
 /* Desktop
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media all and (min-width: 768px) {
+  body.nav-open {
+    overflow: hidden; }
   .wrapper {
     margin: 0 auto; }
   header {
